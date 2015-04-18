@@ -32,8 +32,8 @@ def main():
 
   print("Let's roll some dice")
   print("Rolling a twenty sided die for hp ....", die20.roll())
-  print("Rolling a ten sided for enemy hp ...", die10.roll)
-  print("Rolling a standard die for characters ...", die6.roll)
+  print("Rolling a ten sided for enemy hp ...", die10.roll())
+  print("Rolling a standard die for characters ...", die6.roll())
 
 class dice:
   def __init__(self, maxValue):
