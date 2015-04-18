@@ -16,8 +16,8 @@
 #  along with this program; if not, write to the Free Software
 #  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
 #  MA 02110-1301, USA.
-#  
-#  
+#
+#
 import random
 
 def main():
@@ -26,9 +26,10 @@ def main():
   die10 = dice(10)
   die6 = dice(6)
 
-  print(die20.value)
-  print(die10.value)
-  print(die6.value)
+  # Initial values for debugging
+  # print(die20.value)
+  # print(die10.value)
+  # print(die6.value)
 
   print("Let's roll some dice")
   print("Rolling a twenty sided die for hp ....", die20.roll())
@@ -45,5 +46,5 @@ class dice:
   def roll(self):
     self.value = random.randint(self.minValue, self.maxValue)
     return self.value
-  
+    
 main()
