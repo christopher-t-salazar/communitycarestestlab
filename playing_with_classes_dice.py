@@ -37,12 +37,13 @@ def main():
 
 class dice:
   def __init__(self, maxValue):
-    minValue = 1
     # Find an initial value
-    self.value = random.randint(minValue, maxValue)
+    self.minValue = 1
+    self.maxValue = maxValue
+    self.value = random.randint(self.minValue, self.maxValue)
 
   def roll(self):
-    self.value = random.randint(minValue, maxValue)
+    self.value = random.randint(self.minValue, self.maxValue)
     return self.value
   
 main()
